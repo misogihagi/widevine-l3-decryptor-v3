@@ -5,6 +5,7 @@
   "main": "content_script.js",
   "scripts": {
     "build:pbf": "pbf src/license_protocol.proto > src/license_protocol.proto.js",
+    "build": "esbuild src/content_script.ts --bundle --outfile=content_script.js",
     "start": "echo 'Extension development started'",
     "test": "echo 'No tests defined yet'"
   },
@@ -20,5 +21,8 @@
   "dependencies": {
     "crypto-js": "3.1.2",
     "pbf": "3.0.5"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.2"
   }
 }

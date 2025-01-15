@@ -1,0 +1,22 @@
+{
+  "name": "widevine-decryptor",
+  "version": "1.0.0",
+  "description": "Decrypts and logs media keys from websites that use Widevine DRM",
+  "main": "content_script.js",
+  "scripts": {
+    "build": "echo 'No build process defined yet'",
+    "start": "echo 'Extension development started'",
+    "test": "echo 'No tests defined yet'"
+  },
+  "keywords": [
+    "widevine",
+    "drm",
+    "decrypt",
+    "media",
+    "keys"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+  }
+}

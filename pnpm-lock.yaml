@@ -1,0 +1,51 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      crypto-js:
+        specifier: 3.1.2
+        version: 3.1.2
+      pbf:
+        specifier: 3.0.5
+        version: 3.0.5
+
+packages:
+
+  crypto-js@3.1.2:
+    resolution: {integrity: sha512-egolhMvFgIelOG34Goj51J6MUEMr2X8mSam6+54pXiPxcOAfRU68CgsELFsEI5hXZLk0hvUwc7y1VuHi+5RMIQ==}
+
+  ieee754@1.2.1:
+    resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
+
+  pbf@3.0.5:
+    resolution: {integrity: sha512-L22c/RfkjapvB7RfUoFTSQp39hs+1/Eixcc2Ysgl9uWgOeEWvQfdvyL/oi8LTh3lRcnh3rN1NEFM/KSGdqRpZg==}
+    hasBin: true
+
+  protocol-buffers-schema@3.6.0:
+    resolution: {integrity: sha512-TdDRD+/QNdrCGCE7v8340QyuXd4kIWIgapsE2+n/SaGiSSbomYl4TjHlvIoCWRpE7wFt02EpB35VVA2ImcBVqw==}
+
+  resolve-protobuf-schema@2.1.0:
+    resolution: {integrity: sha512-kI5ffTiZWmJaS/huM8wZfEMer1eRd7oJQhDuxeCLe3t7N7mX3z94CN0xPxBQxFYQTSNz9T0i+v6inKqSdK8xrQ==}
+
+snapshots:
+
+  crypto-js@3.1.2: {}
+
+  ieee754@1.2.1: {}
+
+  pbf@3.0.5:
+    dependencies:
+      ieee754: 1.2.1
+      resolve-protobuf-schema: 2.1.0
+
+  protocol-buffers-schema@3.6.0: {}
+
+  resolve-protobuf-schema@2.1.0:
+    dependencies:
+      protocol-buffers-schema: 3.6.0

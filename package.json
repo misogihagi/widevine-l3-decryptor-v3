@@ -18,5 +18,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "crypto-js": "3.1.2",
+    "pbf": "3.0.5"
   }
 }

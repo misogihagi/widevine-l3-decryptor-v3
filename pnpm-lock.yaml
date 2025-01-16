@@ -15,6 +15,9 @@ importers:
         specifier: 3.0.5
         version: 3.0.5
     devDependencies:
+      '@types/chrome':
+        specifier: ^0.0.297
+        version: 0.0.297
       esbuild:
         specifier: ^0.24.2
         version: 0.24.2
@@ -171,6 +174,18 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/chrome@0.0.297':
+    resolution: {integrity: sha512-e7HM20aH/0Ate5zEP00il2Dzlt8HvO6nXGgxiXKuc1E5cVsNvcykBiTyrSvmWPPDzdZRC5QZvVDYXTihiF1Jfw==}
+
+  '@types/filesystem@0.0.36':
+    resolution: {integrity: sha512-vPDXOZuannb9FZdxgHnqSwAG/jvdGM8Wq+6N4D/d80z+D4HWH+bItqsZaVRQykAn6WEVeEkLm2oQigyHtgb0RA==}
+
+  '@types/filewriter@0.0.33':
+    resolution: {integrity: sha512-xFU8ZXTw4gd358lb2jw25nxY9QAgqn2+bKKjKOYfNCzN4DKCFetK7sPtrlpg66Ywe3vWY9FNxprZawAh9wfJ3g==}
+
+  '@types/har-format@1.2.16':
+    resolution: {integrity: sha512-fluxdy7ryD3MV6h8pTfTYpy/xQzCFC7m89nOH9y94cNqJ1mDIDPut7MnRHI3F6qRmh/cT2fUjG1MLdCNb4hE9A==}
+
   crypto-js@3.1.2:
     resolution: {integrity: sha512-egolhMvFgIelOG34Goj51J6MUEMr2X8mSam6+54pXiPxcOAfRU68CgsELFsEI5hXZLk0hvUwc7y1VuHi+5RMIQ==}
 
@@ -268,6 +283,19 @@ snapshots:
 
   '@esbuild/win32-x64@0.24.2':
     optional: true
+
+  '@types/chrome@0.0.297':
+    dependencies:
+      '@types/filesystem': 0.0.36
+      '@types/har-format': 1.2.16
+
+  '@types/filesystem@0.0.36':
+    dependencies:
+      '@types/filewriter': 0.0.33
+
+  '@types/filewriter@0.0.33': {}
+
+  '@types/har-format@1.2.16': {}
 
   crypto-js@3.1.2: {}
 

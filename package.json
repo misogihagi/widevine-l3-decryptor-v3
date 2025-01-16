@@ -23,6 +23,7 @@
     "pbf": "3.0.5"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.297",
     "esbuild": "^0.24.2"
   }
 }

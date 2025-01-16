@@ -888,3 +888,8 @@ SignedCertificateStatusList.write = function (obj, pbf) {
     if (obj.certificate_status_list) pbf.writeBytesField(1, obj.certificate_status_list);
     if (obj.signature) pbf.writeBytesField(2, obj.signature);
 };
+
+export default {
+    License,
+    SignedMessage,
+}

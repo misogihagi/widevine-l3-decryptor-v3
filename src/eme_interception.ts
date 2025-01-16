@@ -1,3 +1,5 @@
+import WidevineCrypto from './content_key_decryption'
+
 /**
  * Hooks EME calls and forwards them for analysis and decryption.
  * Most of the code here was adapted from https://github.com/google/eme_logger/blob/master/eme_listeners.js
@@ -7,7 +9,7 @@ let lastReceivedLicenseRequest = null;
 let lastReceivedLicenseResponse = null;
 
 /** Set up the EME listeners. */
-const startEMEInterception = () => {
+export const startEMEInterception = () => {
   const listener = new EmeInterception();
   listener.setUpListeners();
 };

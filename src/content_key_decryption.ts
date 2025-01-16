@@ -1,6 +1,10 @@
-/**
- * Modernized WidevineCrypto Implementation
- */
+import Pbf from 'pbf'
+import LicenseProto from './license_protocol.proto.js'
+
+const {
+    License,
+    SignedMessage
+} = LicenseProto
 
 const WidevineCrypto = {
     keysInitialized: false,
@@ -192,3 +196,5 @@ function PEM2Binary(pem) {
         (char) => char.charCodeAt(0)
     ).buffer;
 }
+
+export default WidevineCrypto
